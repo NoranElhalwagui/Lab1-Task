@@ -1,0 +1,9 @@
+Explanation:
+
+- If a[i]a[i]a[i] is **new** (never appeared before), then every subarray ending at iii will have **1 more distinct element** than it did at i−1i-1i−1.
+    - Number of subarrays ending at iii is iii.
+    - So difference bi−bi−1=ib_i - b_{i-1} = ibi−bi−1=i.
+- If a[i]a[i]a[i] is **not new** (it already appeared before), then:
+    - Some subarrays gain 0 distinct elements (because a[i]a[i]a[i] already counted before),
+    - and some may not increase at all.
+    - So the difference bi−bi−1b_i - b_{i-1}bi−bi−1 will be **less than iii**.
